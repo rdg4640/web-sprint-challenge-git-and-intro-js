@@ -230,9 +230,11 @@ Use getArtistByIndex to do the following:
 
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr, num) {
+  return `the artist at index ${num} is ${arr[num].name}`;
 }
+
+console.log("task3", getArtistByIndex[0]);
 
 
 
@@ -244,9 +246,12 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(arr) {
+  for (let i = 0; i < arr.length; i++);
+  return arr.name;
+
 }
+console.log(listOfNames);
 
 
 
@@ -259,10 +264,13 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, index) {
+  const newCopiedArr = [...arr]
+  newCopiedArr.splice(index, 0);
+  return newCopiedArr;
 }
 
+console.log('task 5', removeArtist);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
